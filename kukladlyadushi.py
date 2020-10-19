@@ -26,7 +26,7 @@ def get_links(html,headers):
 
 	for l in links_to_ali:
 
-		link ='https'+str(l.get('href').split('=https')[1]) 
+		link =l.get('href')
 		link_k = l.previous_sibling.get('href')
 
 		
